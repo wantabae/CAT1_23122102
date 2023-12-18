@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            width: 500px;
+            padding: 30px;
+            background-color: rgb(255, 255, 255);
+            margin: 0 auto;
+            margin-top: 100px;
+            box-shadow: 0px 0px 10px 0px grey;
+        }
+        .login-container h2 {
+            text-align: center;
+        }
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .login-container form input {
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .login-container form button {
+            padding: 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            margin-top: 10px;
+        }
+        .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="https://1000logos.net/wp-content/uploads/2016/11/google-logo.jpg" alt="Logo" class="logo">
+        <h2>One account. All of Google.</h2>
+        <p>Sign in with your Google Account</p>
+        <form onsubmit="redirectToInbox(); return false;">
+            <input type="text" placeholder="Email" id="email" required>
+            <input type="password" placeholder="Password" id="password" required>
+            <button type="submit">Sign in</button>
+            <label><input type="checkbox"> Stay signed in</label>
+            <br>
+            <a href="#">Need help?</a>
+        </form>
+        <p>One Google Account for everything Google</p>  
+    </div>
+    <script>
+        function redirectToInbox() {
+            // Simulate a redirect to inbox.html
+            window.location.href = 'inbox.html';
+        }
+    </script>
+</body>
+</html>
